@@ -43,7 +43,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-4 px-3 py-1 text-xs font-medium bg-accent text-accent-foreground rounded-full">
-            Launching February 2026
+            Launching June 2026
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight text-white">
             Turn any glasses into a hands-free nutrition tracker
