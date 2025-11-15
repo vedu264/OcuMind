@@ -334,89 +334,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/20 py-12 relative z-10 bg-black/50 backdrop-blur-sm">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Glasses className="h-5 w-5 text-white" />
-                <span className="font-semibold text-white">OcuMind</span>
-              </div>
-              <p className="text-sm text-gray-400">Hands-free nutrition and activity tracking for your glasses.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Product</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="#features" className="hover:text-white transition-colors">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#how-it-works" className="hover:text-white transition-colors">
-                    How It Works
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#pricing" className="hover:text-white transition-colors">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#features" className="hover:text-white transition-colors">
-                    About
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* third column - replace with your content / links */}
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="#team" className="hover:text-white transition-colors">
-                    Team
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#careers" className="hover:text-white transition-colors">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#contact" className="hover:text-white transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* fourth column - simple legal / follow */}
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="#privacy" className="hover:text-white transition-colors">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#terms" className="hover:text-white transition-colors">
-                    Terms
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
-            <p>© 2025 OcuMind. All rights reserved.</p>
-          </div>
+{/* Footer */}
+<footer className="border-t border-white/20 py-12 relative z-10 bg-black/50 backdrop-blur-sm">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-8 mb-8">
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <Glasses className="h-5 w-5 text-white" />
+          <span className="font-semibold text-white">OcuMind</span>
         </div>
-      </footer>
+        <p className="text-sm text-gray-400">
+          Hands-free nutrition and activity tracking for your glasses.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-4 text-white">Product</h4>
+        <ul className="space-y-2 text-sm text-gray-400">
+          <li>
+            <Link href="#features" className="hover:text-white transition-colors">
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link href="#how-it-works" className="hover:text-white transition-colors">
+              How It Works
+            </Link>
+          </li>
+          <li>
+            <Link href="#pricing" className="hover:text-white transition-colors">
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link href="#features" className="hover:text-white transition-colors">
+              About
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
+      <p>© 2025 OcuMind. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
