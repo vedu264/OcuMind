@@ -31,9 +31,6 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm text-gray-300 hover:text-white transition-colors">
               How It Works
             </Link>
-            <Link href="#pricing" className="text-sm text-gray-300 hover:text-white transition-colors">
-              Pricing
-            </Link>
             <Button size="sm">Get Started</Button>
           </div>
         </div>
