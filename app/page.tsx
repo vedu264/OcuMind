@@ -337,7 +337,9 @@ export default function Home() {
 {/* Footer */}
 <footer className="border-t border-white/20 py-12 relative z-10 bg-black/50 backdrop-blur-sm">
   <div className="container mx-auto px-4">
+
     <div className="grid md:grid-cols-2 gap-8 mb-8">
+
       <div>
         <div className="flex items-center gap-2 mb-4">
           <Glasses className="h-5 w-5 text-white" />
@@ -363,26 +365,30 @@ export default function Home() {
           </li>
         </ul>
       </div>
+
     </div>
-    <div>
-    <h4 className="font-semibold mb-4 text-white">Company</h4>
-    <ul className="space-y-2 text-sm text-gray-400">
-      <li> 
-        <link href ="#how-it-works" className="hover:text-white transition-colors">
-          How It Works
-        </link>
-      </li>
-      <li>
-        <link href="#features" className="hover:text-white transition-colors">
-          About
+
+    {/* Company Section */}
+    <div className="mb-8">
+      <h4 className="font-semibold mb-4 text-white">Company</h4>
+      <ul className="space-y-2 text-sm text-gray-400">
+        <li>
+          <Link href="#how-it-works" className="hover:text-white transition-colors">
+            How It Works
+          </Link>
         </li>
-        </link>
-    </ul>
+        <li>
+          <Link href="#features" className="hover:text-white transition-colors">
+            About
+          </Link>
+        </li>
       </ul>
     </div>
+
     <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
       <p>© 2025 OcuMind. All rights reserved.</p>
     </div>
+
   </div>
 </footer>
     </div>
