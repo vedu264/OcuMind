@@ -374,27 +374,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Terms
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
           <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
             <p>© 2025 OcuMind. All rights reserved.</p>
           </div>
