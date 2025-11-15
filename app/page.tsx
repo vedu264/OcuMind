@@ -1,14 +1,17 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { ArrowRight, Glasses, Mic, Activity, Brain, Shield, Zap } from "lucide-react"
-import Link from "next/link"
-import { AnimatedBackground } from "@/components/animated-background"
-import { GestureDemo } from "@/components/gesture-demo"
-import { ActivityPulse } from "@/components/activity-pulse"
-import { VoiceWave } from "@/components/voice-wave"
-import { FloatingFoodIcons } from "@/components/floating-food-icons"
-import { GestureTrail } from "@/components/gesture-trail"
-import { InteractiveStats } from "@/components/interactive-stats"
+"use client";
+
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ArrowRight, Glasses, Mic, Activity, Brain, Shield, Zap } from "lucide-react";
+import Link from "next/link";
+import { AnimatedBackground } from "@/components/animated-background";
+import { GestureDemo } from "@/components/gesture-demo";
+import { ActivityPulse } from "@/components/activity-pulse";
+import { VoiceWave } from "@/components/voice-wave";
+import { FloatingFoodIcons } from "@/components/floating-food-icons";
+import { GestureTrail } from "@/components/gesture-trail";
+import { InteractiveStats } from "@/components/interactive-stats";
 
 export default function Home() {
   return (
@@ -50,7 +53,7 @@ export default function Home() {
             platform with gesture control and voice assistant.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-base">
+            <Button size="lg" className="text-base" aria-label="Join waitlist">
               Join Waitlist
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -58,6 +61,7 @@ export default function Home() {
               size="lg"
               variant="outline"
               className="text-base bg-transparent border-white/30 text-white hover:bg-white/10"
+              aria-label="Watch demo"
             >
               Watch Demo
             </Button>
@@ -323,7 +327,7 @@ export default function Home() {
             Join the waitlist for early access to OcuMind and be among the first to experience hands-free health
             tracking.
           </p>
-          <Button size="lg" variant="secondary" className="text-base">
+          <Button size="lg" variant="secondary" className="text-base" aria-label="Join waitlist CTA">
             Join Waitlist
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -341,6 +345,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-400">Hands-free nutrition and activity tracking for your glasses.</p>
             </div>
+
             <div>
               <h4 className="font-semibold mb-4 text-white">Product</h4>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -366,11 +371,52 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
+            {/* third column - replace with your content / links */}
+            <div>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="#team" className="hover:text-white transition-colors">
+                    Team
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#careers" className="hover:text-white transition-colors">
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact" className="hover:text-white transition-colors">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* fourth column - simple legal / follow */}
+            <div>
+              <h4 className="font-semibold mb-4 text-white">Legal</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="#privacy" className="hover:text-white transition-colors">
+                    Privacy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#terms" className="hover:text-white transition-colors">
+                    Terms
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
             <p>© 2025 OcuMind. All rights reserved.</p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
