@@ -357,24 +357,29 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href="#how-it-works" className="hover:text-white transition-colors">
-              How It Works
-            </Link>
-          </li>
-          <li>
             <Link href="#pricing" className="hover:text-white transition-colors">
               Pricing
-            </Link>
-          </li>
-          <li>
-            <Link href="#features" className="hover:text-white transition-colors">
-              About
             </Link>
           </li>
         </ul>
       </div>
     </div>
-
+    <div>
+    <h4 className="font-semibold mb-4 text-white">Company</h4>
+    <ul className="space-y-2 text-sm text-gray-400">
+      <li> 
+        <link href ="#how-it-works" className="hover:text-white transition-colors">
+          How It Works
+        </link>
+      </li>
+      <li>
+        <link href="#features" className="hover:text-white transition-colors">
+          About
+        </li>
+        </link>
+    </ul>
+      </ul>
+    </div>
     <div className="pt-8 border-t border-white/20 text-center text-sm text-gray-400">
       <p>© 2025 OcuMind. All rights reserved.</p>
     </div>
