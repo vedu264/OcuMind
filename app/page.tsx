@@ -363,7 +363,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="#features" className="hover:text-white transition-colors">
                     About
                   </Link>
                 </li>
