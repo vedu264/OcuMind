@@ -362,11 +362,6 @@ export default function Home() {
                     Pricing
                   </Link>
                 </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
                     About
